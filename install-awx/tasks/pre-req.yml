@@ -34,7 +34,7 @@
     force: yes
 - name: Create file
   file:
-    path: /tmp/awx/installer/install.yml
+    path: /tmp/awx/installer/inventoryng/install.yml
     state: touch
 
 - name: Insert/Update inventoryng
