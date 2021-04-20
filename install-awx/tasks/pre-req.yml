@@ -39,7 +39,7 @@
 
 - name: Insert/Update inventoryng
   blockinfile:
-    path: /tmp/awx/installer/inventoryng
+    path: /tmp/awx/installer/inventoryng/install.yml
     block: |
       #Gerado Via Ansible
       localhost ansible_connection=local ansible_python_interpreter="/usr/bin/env python3"
