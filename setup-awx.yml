@@ -1,3 +1,4 @@
+---
 - hosts: awx
   become: yes
   user: adminlx
