@@ -27,11 +27,6 @@
     name: 
         - docker-compose==1.9.0
     
-- name: Clonando o REPO
-  git:
-    repo: "{{ git_repo }}"
-    dest: /tmp/awx
-    force: yes
 - name: Create file
   file:
     path: /tmp/awx/installer/inventory
