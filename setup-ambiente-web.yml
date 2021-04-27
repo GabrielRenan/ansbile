@@ -1,0 +1,13 @@
+---
+- hosts: dbserver
+  become: yes
+  user: adminlx
+  roles:
+  - { role: install-db, tags: ["install_db"]}
+  
+- hosts: all
+  become: yes
+  user: adminlx
+  roles:
+  - { role: install-wp, tags: ["install_wp"]}
+    
